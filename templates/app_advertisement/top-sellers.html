@@ -1,63 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/fontello.css">
-  <title>Index</title>
-</head>
+{% block title %}ТОп продавцов{% endblock %}
+{% block content %}
 
 <body>
-  <ul class="nav nav-pills sticky-top bg-white nav-fill">
-    <li class="nav-item">
-      <a class="nav-link"  href="{% url 'main-page' %}">
-        <span style="font-weight: bold;">Главная</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="top-sellers.html"><span style="font-weight: bold;">Топ продавцов</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="advertisement-post.html">
-        <span style="font-weight: bold;">Разместить объявление</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="register.html">
-        <span style="font-weight: bold;">Регистрация</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="login.html">
-        <span style="font-weight: bold;">Войти</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="profile.html">
-        <span style="font-weight: bold;">Профиль</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">
-        <span style="font-weight: bold;">Выйти</span>
-      </a>
-    </li>
-  </ul>
-  <div class="row">
-    <div class="col" style="margin: 50px;">
-      <div class="display-2">
-        <span class="badge bg-primary">Топ продавцов на сайте</span>
-      </div>
-    </div>
-  </div>
-  <div class="container" style="min-height: 452px">
-    <ul class="list-group list-group-numbered">
-
       <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
           <div class="fw-bold">Ваня

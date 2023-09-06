@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}ТОп продавцов{% endblock %}
+{% block title %}Топ продавцов{% endblock %}
 {% block content %}
 
-<body>
+{% block content %}
       <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
           <div class="fw-bold">Ваня
@@ -60,7 +60,5 @@
     </nav>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+{% endblock %}
 
